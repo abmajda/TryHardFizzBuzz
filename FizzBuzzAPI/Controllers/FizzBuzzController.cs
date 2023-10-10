@@ -15,7 +15,7 @@ namespace FizzBuzzAPI.Controllers
             _fizzBuzzSolverService = fizzBuzzSolverService;
         }
 
-        [HttpPost("fizz_buzz")]
+        [HttpPost]
         public ActionResult<FizzBuzzResult> SolveFizzBuzz(FizzBuzzConfiguration config)
         {
             var result = _fizzBuzzSolverService.SolveFizzBuzz(config);
